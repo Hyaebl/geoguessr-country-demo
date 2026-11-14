@@ -1,0 +1,109 @@
+{
+  "model_sha256": "279bd64ab23f39f071664a1f525735dffbc86c82108bf99fcbda8463a4a7d5a4",
+  "classes": [
+    "Argentina",
+    "Australia",
+    "Austria",
+    "Belgium",
+    "Brazil",
+    "Bulgaria",
+    "Canada",
+    "Chile",
+    "Colombia",
+    "Czechia",
+    "Finland",
+    "France",
+    "Germany",
+    "Greece",
+    "Indonesia",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Japan",
+    "Malaysia",
+    "Mexico",
+    "Netherlands",
+    "New Zealand",
+    "Norway",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Russia",
+    "Singapore",
+    "South Africa",
+    "South Korea",
+    "Spain",
+    "Sweden",
+    "Taiwan",
+    "Thailand",
+    "Turkey",
+    "United Kingdom",
+    "United States"
+  ],
+  "data_fingerprint": "29341eb0a26533b4996746de7aa051eb360bdb602ffb1ea2478bffd4c4bf7fc7",
+  "training_images": 34936,
+  "validation_images": 6355,
+  "final_test_images": 2435,
+  "selected_epoch": 24,
+  "test_accuracy": 0.3264887063655031,
+  "test_macro_f1": 0.2582478227943529,
+  "test_top3_accuracy": 0.5593429207801819,
+  "training_source_sha256": {
+    "train.py": "8d3e5278d175521867f167c3513385936ff978f2cf410628866a3de65e11ec45",
+    "growth_data.py": "0cffa010219e3ebbf64aaae9028672219113112e5f109e85dea912e5db47beee",
+    "growth_training.py": "e0ce1f8781890a4adb489d510c974acdf6852b0d6353aecadb10daf0b6457a74",
+    "requirements-local.lock.txt": "f3b8977d729c5f5103e580f0a0adb34c8521a8d42486d71c1f0860f2ea7a8dba"
+  },
+  "examples": [
+    {
+      "file": "street.jpg",
+      "title": "Street scene",
+      "label": "Japan",
+      "sha256": "93623144e38db31d3ae51c2b90e378cc543df1a31d8616d8614f1ee3092db6bd",
+      "expected_prediction": "Japan",
+      "expected_score": 0.9543770551681519,
+      "source_image": "Japan/canvas_1629419883.jpg",
+      "url": "./examples/street.jpg"
+    },
+    {
+      "file": "neighborhood.jpg",
+      "title": "Residential street",
+      "label": "Canada",
+      "sha256": "93cb6354bd0ffdd3c231525eb9bf3c3ec689816065da8a2eed8b2e4008df182e",
+      "expected_prediction": "United States",
+      "expected_score": 0.679288387298584,
+      "source_image": "Canada/canvas_1629973119.jpg",
+      "url": "./examples/neighborhood.jpg"
+    }
+  ],
+  "browser_model": {
+    "bytes": 96089945,
+    "sha256": "94054a5f6e9ac9cdd83be1b4815703737c31485fa257556dbc89eeea26b04628",
+    "parts": [
+      {
+        "file": "model-1-eae8928a7317.bin",
+        "bytes": 25165824,
+        "sha256": "eae8928a7317188d729ccadf0de2da83571c1da434b812d0b079f07c7aa86d3b"
+      },
+      {
+        "file": "model-2-8c2d28c9f75d.bin",
+        "bytes": 25165824,
+        "sha256": "8c2d28c9f75d50e8a426dd7e094b37b2e7e502e9275b30172570991eab1abba7"
+      },
+      {
+        "file": "model-3-98b1ef54cc4d.bin",
+        "bytes": 25165824,
+        "sha256": "98b1ef54cc4d6893579faf64e8b34148e475d07a40aa58740d1f814ef012c59c"
+      },
+      {
+        "file": "model-4-43d48baab4b6.bin",
+        "bytes": 20592473,
+        "sha256": "43d48baab4b6ff361194ac9404367abf15d283a67576ef8f5c0cbd0af72d1d7d"
+      }
+    ],
+    "download_mb": 111,
+    "runtime_version": "1.31.1"
+  }
+}

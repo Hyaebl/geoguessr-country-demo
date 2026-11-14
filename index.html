@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GeoGuessr Bot</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./vendor/ort.wasm.min.js" defer></script>
+  <script src="./preprocess.js" defer></script>
+  <script src="./browser.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><h1>GeoGuessr Bot</h1><p>Country predictions from a screenshot.</p><p class="browser-note">Runs in your browser. Images stay on your device. First use downloads about 111 MB.</p></header>
+    <form id="upload-form">
+      <label for="image-file">Screenshot</label>
+      <div class="controls">
+        <input id="image-file" type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp">
+        <button id="predict" type="submit" disabled>Predict countries</button>
+      </div>
+    </form>
+    <div id="examples" class="examples" aria-label="Example images"><span>Examples</span></div>
+    <p id="status" role="status" aria-live="polite">Loading model information...</p>
+    <div class="workspace">
+      <figure class="preview">
+        <img id="preview-image" alt="Selected screenshot" hidden>
+        <p id="preview-placeholder">Choose a screenshot to begin.</p>
+        <figcaption id="filename"></figcaption>
+      </figure>
+      <section class="results" aria-labelledby="results-title">
+        <h2 id="results-title">Likely countries</h2>
+        <p id="results-placeholder">Your five highest scoring countries will appear here.</p>
+        <ol id="predictions"></ol>
+        <p id="dataset-label" hidden></p>
+        <p id="timing"></p>
+      </section>
+    </div>
+    <footer>
+      <details><summary id="model-summary">Supported countries</summary><p id="countries"></p><p id="benchmark"></p></details>
+    </footer>
+  </main>
+</body>
+</html>

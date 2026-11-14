@@ -1,0 +1,21 @@
+{
+  "checkpoint_sha256": "279bd64ab23f39f071664a1f525735dffbc86c82108bf99fcbda8463a4a7d5a4",
+  "onnx_sha256": "94054a5f6e9ac9cdd83be1b4815703737c31485fa257556dbc89eeea26b04628",
+  "opset": 17,
+  "onnx_version": "1.23.2",
+  "verification_runtime": "1.32.0",
+  "web_runtime": "1.31.1",
+  "examples": [
+    {
+      "file": "street.jpg",
+      "prediction": "Japan",
+      "maximum_logit_difference": 5.0067901611328125e-06
+    },
+    {
+      "file": "neighborhood.jpg",
+      "prediction": "United States",
+      "maximum_logit_difference": 5.4836273193359375e-06
+    }
+  ],
+  "training_or_final_evaluation_rerun": false
+}
